@@ -7,6 +7,12 @@ The application digitizes dairy farm accounting by providing a centralized platf
 
 ---
 
+# 🎥 Project Demo Video
+
+[▶ Watch Demo Video](https://github.com/grchanduvardhan/Ksheera-Sagara/blob/main/Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Project%20Demo%20Video.mp4)
+
+---
+
 # ✨ Features
 
 - Daily Milk Income Tracking
