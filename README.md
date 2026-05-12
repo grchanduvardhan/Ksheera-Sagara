@@ -35,6 +35,9 @@ The application digitizes dairy farm accounting by providing a centralized platf
 - Displays expense breakdown chart
 - Monthly navigation support
 
+![Dashboard](Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Dashboard.jpeg)
+
+
 ## 🥛 Income Module
 - Add daily milk entries
 - Record:
@@ -63,6 +66,8 @@ The application digitizes dairy farm accounting by providing a centralized platf
 - Generate monthly financial reports
 - Export PDF summary
 - Share reports through other applications
+
+![Monthly Summary](Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Monthly%20Summary.jpeg)
 
 ---
 
