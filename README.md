@@ -34,7 +34,7 @@ The application digitizes dairy farm accounting by providing a centralized platf
 - Displays expense breakdown chart
 - Monthly navigation support
 
-![Dashboard](Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Dashboard.jpeg)
+<img src="Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Dashboard.jpeg" width="300"/>
 
 
 ## 🥛 Income Module
@@ -66,8 +66,7 @@ The application digitizes dairy farm accounting by providing a centralized platf
 - Export PDF summary
 - Share reports through other applications
 
-![Monthly Summary](Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Monthly%20Summary.jpeg)
-
+<img src="Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Monthly%20Summary.jpeg" width="300"/>
 ---
 
 # 🚀 How to Run the Project
