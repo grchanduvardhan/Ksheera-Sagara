@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.ksheera.sagara.ui.dashboard.DashboardFragment"
+        android:label="Dashboard" />
+
+    <fragment
+        android:id="@+id/incomeFragment"
+        android:name="com.ksheera.sagara.ui.income.IncomeFragment"
+        android:label="Income Log" />
+
+    <fragment
+        android:id="@+id/expenseFragment"
+        android:name="com.ksheera.sagara.ui.expense.ExpenseFragment"
+        android:label="Expenses" />
+
+    <fragment
+        android:id="@+id/cowAnalysisFragment"
+        android:name="com.ksheera.sagara.ui.cowanalysis.CowAnalysisFragment"
+        android:label="Cow Analysis" />
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.ksheera.sagara.ui.summary.SummaryFragment"
+        android:label="Monthly Summary" />
+
+</navigation>

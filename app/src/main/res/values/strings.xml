@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ksheera-Sagara</string>
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_income">Income</string>
+    <string name="nav_expense">Expense</string>
+    <string name="nav_cows">Cows</string>
+    <string name="nav_summary">Summary</string>
+</resources>

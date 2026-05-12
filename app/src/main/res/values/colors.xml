@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="green_primary">#FF2E7D32</color>
+    <color name="green_light">#FFE8F5E9</color>
+    <color name="red_primary">#FFC62828</color>
+    <color name="red_light">#FFFFEBEE</color>
+    <color name="blue_primary">#FF1565C0</color>
+    <color name="orange_primary">#FFE65100</color>
+    <color name="nav_selected">#FF2E7D32</color>
+    <color name="nav_unselected">#FF9E9E9E</color>
+</resources>

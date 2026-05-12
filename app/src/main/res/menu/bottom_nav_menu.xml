@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_dashboard"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/incomeFragment"
+        android:icon="@drawable/ic_income"
+        android:title="Income" />
+
+    <item
+        android:id="@+id/expenseFragment"
+        android:icon="@drawable/ic_expense"
+        android:title="Expense" />
+
+    <item
+        android:id="@+id/cowAnalysisFragment"
+        android:icon="@drawable/ic_cow"
+        android:title="Cows" />
+
+    <item
+        android:id="@+id/summaryFragment"
+        android:icon="@drawable/ic_summary"
+        android:title="Summary" />
+
+</menu>

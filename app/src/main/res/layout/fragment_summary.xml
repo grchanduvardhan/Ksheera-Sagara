@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <!-- Month Nav -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+            <ImageButton android:id="@+id/btnPrevMonth" android:layout_width="40dp"
+                android:layout_height="40dp" android:src="@android:drawable/ic_media_rew"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+            <TextView android:id="@+id/tvMonthLabel" android:layout_width="0dp"
+                android:layout_height="wrap_content" android:layout_weight="1"
+                android:gravity="center" android:textSize="18sp" android:textStyle="bold"
+                android:textColor="#1B5E20"/>
+            <ImageButton android:id="@+id/btnNextMonth" android:layout_width="40dp"
+                android:layout_height="40dp" android:src="@android:drawable/ic_media_ff"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+        </LinearLayout>
+
+        <!-- Financial Summary Card -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:cardCornerRadius="12dp"
+            app:cardElevation="4dp" android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Financial Summary" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Total Income" android:textColor="#2E7D32"/>
+                    <TextView android:id="@+id/tvSummaryIncome" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:textColor="#2E7D32" android:text="₹0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Total Expense" android:textColor="#C62828"/>
+                    <TextView android:id="@+id/tvSummaryExpense" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold"
+                        android:textColor="#C62828" android:text="₹0"/>
+                </LinearLayout>
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Net Profit" android:textStyle="bold"/>
+                    <TextView android:id="@+id/tvSummaryProfit" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textSize="16sp"
+                        android:textStyle="bold" android:text="₹0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="4dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Total Liters"/>
+                    <TextView android:id="@+id/tvSummaryLiters" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="0 L"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Profit per Liter"/>
+                    <TextView android:id="@+id/tvSummaryProfitLiter" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:text="₹0/L"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tvEntryCount" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                    android:textSize="11sp" android:textColor="#9E9E9E" android:text="0 entries"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Expense Breakdown -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:cardCornerRadius="12dp"
+            app:cardElevation="4dp" android:layout_marginBottom="12dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Expense Breakdown" android:textSize="16sp"
+                    android:textStyle="bold" android:layout_marginBottom="12dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🌾 Fodder" android:textColor="#FF8F00"/>
+                    <TextView android:id="@+id/tvFodder" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold" android:text="₹0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="💉 Medical" android:textColor="#C62828"/>
+                    <TextView android:id="@+id/tvMedical" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold" android:text="₹0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="6dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="👷 Labor" android:textColor="#1565C0"/>
+                    <TextView android:id="@+id/tvLabor" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold" android:text="₹0"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="📦 Other" android:textColor="#558B2F"/>
+                    <TextView android:id="@+id/tvOther" android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:textStyle="bold" android:text="₹0"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- AI Suggestion Card -->
+        <androidx.cardview.widget.CardView android:layout_width="match_parent"
+            android:layout_height="wrap_content" app:cardCornerRadius="12dp"
+            app:cardElevation="4dp" app:cardBackgroundColor="#F3E5F5"
+            android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="💡 Smart Suggestion" android:textSize="15sp"
+                    android:textStyle="bold" android:textColor="#6A1B9A"
+                    android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSuggestion" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textSize="14sp"
+                    android:lineSpacingMultiplier="1.4" android:text="Loading..."/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Export Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnExportPdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Export PDF Summary"
+            android:textSize="15sp"
+            android:padding="14dp"
+            app:backgroundTint="#1565C0"/>
+
+    </LinearLayout>
+</ScrollView>
