@@ -1,5 +1,4 @@
-# 🐄 Ksheera-Sagara
-## Dairy Profit / Loss Calculator
+# 🐄 Ksheera-Sagara - Dairy Profit / Loss Calculator
 
 Ksheera-Sagara is an Android-based mobile application developed for dairy farmers to help them manage daily milk income, track farm expenses, and calculate overall profit or loss efficiently.
 
