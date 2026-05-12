@@ -6,6 +6,12 @@ The application digitizes dairy farm accounting by providing a centralized platf
 
 ---
 
+# 📥 Download APK
+
+[![Download APK](https://img.shields.io/badge/Download-APK-green?style=for-the-badge&logo=android)](KsheeraSagara%20App.apk)
+
+---
+
 # 🎥 Demo Video
 
 [![Watch Demo Video](https://img.shields.io/badge/DEMO-VIDEO-blue?style=for-the-badge&logo=github)](https://github.com/grchanduvardhan/Ksheera-Sagara/blob/main/Project%20Photos,%20Video%20%26%20Report/KsheeraSagara%20Project%20Demo%20Video.mp4)
